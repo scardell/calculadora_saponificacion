@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Saponificación</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Saponificación</h1>
+        <form id="saponificationForm">
+            <label for="oilType">Tipo de ingrediente:</label>
+            <select id="oilType" name="oilType">
+                <option value="0.134">Aceite de oliva</option>
+                <option value="0.136">Aceite de coco</option>
+                <option value="0.137">Aceite de palma</option>
+                <option value="0.069">Cera de abeja</option>
+            </select>
+
+            <label for="lyeType">Tipo de álcali:</label>
+            <select id="lyeType" name="lyeType">
+                <option value="naoh">NaOH (sosa)</option>
+                <option value="koh">KOH (potasio)</option>
+            </select>
+
+            <label for="soapAmount">Cantidad de jabón (en gramos):</label>
+            <input type="number" id="soapAmount" name="soapAmount" required>
+
+            <button type="button" onclick="calculate()">Calcular</button>
+        </form>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
